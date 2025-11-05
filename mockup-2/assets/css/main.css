@@ -1831,11 +1831,11 @@ input, select, textarea {
 		-webkit-transition: border-color 0.2s ease;
 		-ms-transition: border-color 0.2s ease;
 		transition: border-color 0.2s ease;
-		background-color: transparent;
+		background-color: #fec20f;
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: #fec20f !important;
 		border-radius: 3em;
-		color: #000000 !important;
+		color: #1C1F4C !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -3276,7 +3276,7 @@ input, select, textarea {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			min-height: 70vh;
+			min-height: 100vh;
 		}
 
 			body.is-ie .wrapper.fullscreen {
@@ -3377,7 +3377,7 @@ input, select, textarea {
 
 		#header > .title {
 			border: 0;
-			color: #ffffff;
+			color: #1C1F4C;
 			display: block;
 			font-size: 1.25em;
 			font-weight: bold;
@@ -3524,7 +3524,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #e1a834;
+		background: #fec20f;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3761,7 +3761,7 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #5c3400;
+				background: #1c1f4c;
 			}
 
 			#sidebar nav a:after {
@@ -3777,11 +3777,11 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:hover {
-				color: rgba(255, 255, 255, 0.55);
+				color: rgb(255, 255, 255);
 			}
 
 			#sidebar nav a.active {
-				color: #ffffff;
+				color: #1C1F4C;
 			}
 
 				#sidebar nav a.active:after {
@@ -3873,10 +3873,15 @@ input, select, textarea {
 /* Intro */
 
         #intro {
-            background-image: url(images/dragonfly-logo-blur2.png);
-            background-size: 100% 100%;
+            background-attachment: fixed;
+            background-image: url("images/honeycomb-background.svg");
             background-position: top right;
             background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        #yellow-dragonfly {
+            width: 25%;
         }
 
 		#intro p {
