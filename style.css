@@ -1,4 +1,3 @@
-
 /* GENERAL */
 
 html {
@@ -16,6 +15,7 @@ body {
     color: #0b3a11;
     font-family: "Stack Sans Text", sans-serif;
     font-size: 1.2em;
+    background-color: #fec20f;
 }
 
 ul {
@@ -44,8 +44,9 @@ a {
     color: #0b3a11;
     font-family: "Stack Sans Text", sans-serif;
     display: block;
-    width: 200px;
+    width: 20%;
     text-align: center;
+    font-size: .8em;
 }
 
 h3 {
@@ -104,6 +105,8 @@ a.white {
     background-attachment: fixed;
     text-align: center;
     height: 100vh;
+    font-size: 1.3em;
+    padding-top: 70px;
 }
 
 div.center {
@@ -124,13 +127,23 @@ h1 {
 
 #main p {
     margin: 5px 0;
-    max-width: 530px;
+    max-width: 700px;
 }
+
+#main a {
+    margin-top: 40px;
+}
+
+#main a:hover {
+    color: #fec20f;
+}
+
 
 /* SECTION 2: WHAT WE TREAT */
 .pest-example {
     display: flex;
     height: 400px;
+    background-color: white;
 }
 
 .pest-image {
@@ -146,6 +159,19 @@ h1 {
 
 .pest-content {
     flex: 2;
+}
+
+.pest-content p {
+    margin-bottom: 40px;
+}
+
+.pest-link {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.pest-link:hover {
+    color: #fec20f;
 }
 
 /* SECTION 3: WHO WE ARE */
@@ -181,7 +207,8 @@ div.image {
 /* SECTION 4: CONTACT */
 #contact {
     background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url(images/leafy-blur.png);
-    background-size: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .contact-container {
@@ -254,6 +281,10 @@ form .button {
     width: 100%;
 }
 
+#contact .button {
+    width: 100%;
+}
+
 /* FOOTER */
 footer {
     background-color: #fec20f;
@@ -273,6 +304,103 @@ footer ul {
     display: flex;
     justify-content: space-between;
 }
+
+/* SUBPAGE GENERAL STYLING */
+
+    /* Header */
+    #subpage-header {
+        height: auto;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        font-size: .9em;
+    }
+
+    div.header {
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+
+    #subpage-header img + a {
+        color: white;
+    }
+
+    #subpage-header nav {
+        width: 100%;
+    }
+
+    #subpage-header ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    #subpage-header a {
+        color: rgba(255, 255, 255, 0.658);
+    }
+
+    #subpage-header a:hover {
+        color: white;
+    }
+
+    #subpage-header .active {
+        color: white;
+    }
+
+    #subpage-header img {
+        width: 60px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    /* Main */
+    .subpage-main {
+        padding: 50px;
+        background-color: white;
+    }
+
+    .subpage-main h2 {
+        margin: 0;
+        font-size: 1.8em;
+        font-weight: normal;
+    }
+
+    .subpage-main hr {
+        margin: 25px 0;
+        color: #fec20f;
+        border: solid 2px #fec20f;
+        border-radius: 2px;
+    }
+
+    .subpage-example {
+        display: flex;
+    }
+
+    .subpage-example-text {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subpage-image-example {
+        display: flex;
+        gap: 25px;
+        flex: 3;
+    }
+
+    .subpage-image-example > * {
+        border: 6px solid #fec20f;
+        border-radius: 15px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .subpage-button {
+        width: 30%;
+        margin: auto;
+    }
 
 
 /* MOBILE LAYOUT */
@@ -298,6 +426,13 @@ footer ul {
     #main {
         padding-top: 25px;
         background-size: 150%;
+        font-size: 1.1em;
+        padding-top: 0;
+    }
+
+    #main .button {
+        width: 70%;
+        font-size: .6em;
     }
     
     /* SECTION 2: WHAT WE TREAT */
@@ -313,7 +448,7 @@ footer ul {
     
     div.pest-image {
         width: 100%;
-        height: 280px;
+        max-height: 280px;
         flex-grow: 1;
     }
 
@@ -323,6 +458,16 @@ footer ul {
         flex-direction: column;
         align-items: center;
         justify-content: center; 
+        gap: 15px;
+        padding: 30px 25px;
+    }
+
+    div.pest-content > * {
+        margin: 0;
+    }
+
+    div.pest-content p {
+        font-size: .9em;
     }
     
     #pests img {
@@ -418,6 +563,45 @@ footer ul {
         flex-direction: column;
         gap: 10px;
     }
+
+    /* SUBPAGES */
+        #subpage-header a {
+            display: none;
+        }
+
+        #subpage-header .header {
+            width: 100%;
+        }
+
+        #subpage-header .header + .header {
+            width: 0;
+        }
+
+        #subpage-header a.show {
+            display: block;
+            margin: auto;
+        }
+
+        #subpage-header img {
+            margin: 0;
+        }
+
+        .subpage-example {
+            flex-direction: column;
+        }
+
+        .subpage-image-example {
+            flex-direction: column;
+        }
+
+        .subpage-image-example img {
+            width: 100%;
+            height: auto;
+        }
+
+        a.subpage-button {
+            width: 95%;
+        }
 }
 
 /* TABLET LAYOUT */
