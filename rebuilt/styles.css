@@ -63,6 +63,7 @@ header {
     position: fixed;
     background-color: #fec20f;
     width: 100%;
+    z-index: 1;
 }
 
 nav { 
@@ -77,6 +78,8 @@ header ul {
 .active {
     color: white;
 }
+
+
 
 /***********************************************
 *** MAIN SECTION
@@ -122,7 +125,7 @@ header ul {
 
 a.main {
     font-weight: 900;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-top: 10vh;
     border: solid 3px #0b3a11;
     border-radius: 20px;
@@ -136,4 +139,64 @@ a.main {
 a.main:hover {
     padding: 3rem;
     border: solid 3px #fec20f;
+}
+
+
+
+/***********************************************
+*** SECTION 2: WHAT WE TREAT (PESTS)
+************************************************/
+
+#pests {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+@media (min-width: 1400px) {
+    #pests {
+        font-size: 1.3em;
+    }
+}
+
+.pest-example {
+    display: flex;
+    width: 100%;
+    height: 25vw;
+}
+
+div.pest-image {
+    background-color: white;
+    flex: 1;
+    position: relative;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+div.pest-text-content {
+    background-color: white;
+    flex: 3;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    & * {
+        margin: 0;
+    }
+}
+
+#pests h2 {
+    font-size: 1.7em;
+}
+
+#pests a {
+    font-size: 1.2em;
+    font-weight: 900;
+    text-decoration: underline;
+    margin-top: 2em;
 }
