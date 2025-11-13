@@ -41,7 +41,7 @@ a {
 
 a:hover {
     color: #fec20f;
-    transition: color 300ms ease;
+    transition: all 300ms ease;
 }
 
 h3 {
@@ -82,9 +82,8 @@ header ul {
 
 .active {
     color: white;
+    font-weight: 900;
 }
-
-
 
 /***********************************************
 *** MAIN SECTION
@@ -209,7 +208,7 @@ div.pest-text-content {
     background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/blurry-leaf.png);
     background-attachment: fixed;
     background-size: 100%;
-    padding: 10rem 7rem;
+    padding: 20rem 10rem;
     font-size: 1.1em;
 }
 
@@ -237,6 +236,114 @@ div.pest-text-content {
         height: auto;
         object-fit: cover;
         border-radius: 30px;
+    }
+}
+
+/***********************************************
+*** SECTION 4: GET IN TOUCH
+************************************************/
+
+#contact {
+    background-color: white;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url(images/leafy-blur.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20rem 10rem 10rem 10rem;
+    font-size: 1.2em;
+}
+
+.contact-container {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+}
+
+.contact-form {
+    flex: 3;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 2rem 0;
+    gap: 1rem;
+}
+
+label {
+    font-weight: 700;
+}
+
+.textbox {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #0b3a11;
+    border-radius: 7px;
+    padding: 1rem;
+    font-family: "Stack Sans Text", Arial, Helvetica, sans-serif;
+    transition: all 300ms ease;
+}
+
+.textbox:focus {
+    border: 1px solid #fec20f;
+    outline: none
+}
+
+.name, .phone {
+    width: 50%;
+}
+
+.email, .message {
+    width: 100%;
+}
+
+textarea {
+    height: 15em;
+}
+
+.button {
+    font-size: 1.2em;
+    background-color: #fec20f;
+    border: 2px solid #fec20f;
+    border-radius: 30px;
+    padding: 2rem 3rem;
+    transition: all 300ms ease;
+    color: white;
+}
+
+.button:hover {
+    background-color: white;
+    border: 2px solid #fec20f;
+    color: #fec20f;
+    cursor:pointer;
+}
+
+.contact-socials {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-socials ul {
+    text-align: left;
+    display: flex;
+    font-size: 1.2em;
+    gap: .5em;
+}
+
+.social-logo {
+    width: 100%;
+    align-self: center;
+
+    & img {
+        width: 100%;
+        height: auto;
     }
 }
 

@@ -155,28 +155,37 @@
                 <!-- Contact Form -->
                 <div class="contact-form">
                     <form action="#">
+
+                        <!-- Subject line for email -->
+                        <input type="hidden" name="subject" value="New message from %{formName} from %{siteName}" />
                         
                         <!-- Name -->
-                        <div class="form-info">
-                            <label for=""></label>
-                            <input type="text">
+                        <div class="form-info name">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="textbox" required />
                         </div>
                         
+                        <!-- Phone Number -->
+                        <div class="form-info phone">
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone" class="textbox" required />
+                        </div>
+
                         <!-- Email -->
-                        <div class="form-info">
-                            <label for=""></label>
-                            <input type="text">
+                        <div class="form-info email">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="textbox" required />
                         </div>
 
                         <!-- Message -->
-                        <div class="form-info">
-                            <label for=""></label>
-                            <input type="textarea">
+                        <div class="form-info message">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" class="textbox" required></textarea>
                         </div>
 
                         <!-- Submit Button -->
                         <div class="form-info">
-                            <input type="submit">
+                            <input type="submit" value="Send Message" class="button"/>
                         </div>
                     </form>
                 </div>
@@ -186,19 +195,19 @@
                     
                     <!-- Email -->
                     <div class="social-info">
-                        <h4></h4>
-                        <a href=""></a>
+                        <h4>Email</h4>
+                        <a href="mailto:anaturalpestsolution@gmail.com">anaturalpestsolution@gmail.com</a>
                     </div>
                     
                     <!-- Phone -->
                     <div class="social-info">
-                        <h4></h4>
-                        <a href=""></a>
+                        <h4>Phone</h4>
+                        <a href="tel:815-714-9543">815-714-9543</a>
                     </div>
 
                     <!-- Socials -->
                     <div class="social-info">
-                        <h4></h4>
+                        <h4>Socials</h4>
                         <ul>
                             <!-- Yelp -->
                             <li><a href="https://www.yelp.com/biz/a-natural-pest-solution-crest-hill"><i class="fa-brands fa-yelp"></i></a></li>
