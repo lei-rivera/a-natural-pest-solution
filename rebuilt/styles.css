@@ -35,8 +35,22 @@ ul {
 a {
     text-decoration: none;
     color: #0b3a11;
+
+    
 }
 
+a:hover {
+    color: #fec20f;
+    transition: color 300ms ease;
+}
+
+.company-logo {
+    font-family: Pacifico, cursive, sans-serif;
+}
+
+.hide-for-mobile {
+    display: none;
+}
 
 /***********************************************
 *** HEADER
@@ -46,6 +60,9 @@ header {
     height: 5vh;
     display: flex;
     align-items: center;
+    position: fixed;
+    background-color: #fec20f;
+    width: 100%;
 }
 
 nav { 
@@ -69,8 +86,54 @@ header ul {
     background-color: white;
     background-image: url(images/nature-background.svg);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.8rem;
+}
+
+.logo-img {
+    width: 33rem;
+    height: auto;
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .main-content {
     text-align: center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.0rem;
+
+    & * {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+a.main {
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: 10vh;
+    border: solid 3px #0b3a11;
+    border-radius: 20px;
+    padding: 2rem;
+    transition: 
+        padding 300ms ease,
+        color 300ms ease,
+        border 300ms ease;
+}
+
+a.main:hover {
+    padding: 3rem;
+    border: solid 3px #fec20f;
 }
