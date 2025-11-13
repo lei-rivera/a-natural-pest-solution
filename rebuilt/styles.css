@@ -348,6 +348,26 @@ textarea {
 }
 
 /***********************************************
+*** FOOTER
+************************************************/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 5vh;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer-link {
+    border-bottom: dotted 1px #0b3a11;
+}
+
+/***********************************************
 *** MEDIA QUERIES
 ************************************************/
 
