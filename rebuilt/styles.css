@@ -44,6 +44,11 @@ a:hover {
     transition: color 300ms ease;
 }
 
+h3 {
+    font-size: 1.5em;
+    margin: 0 0 2rem 0;
+}
+
 .company-logo {
     font-family: Pacifico, cursive, sans-serif;
 }
@@ -154,12 +159,6 @@ a.main:hover {
     font-size: 1em;
 }
 
-@media (min-width: 1400px) {
-    #pests {
-        font-size: 1.3em;
-    }
-}
-
 .pest-example {
     display: flex;
     width: 100%;
@@ -200,3 +199,58 @@ div.pest-text-content {
     text-decoration: underline;
     margin-top: 2em;
 }
+
+/***********************************************
+*** SECTION 3: WHO WE ARE
+************************************************/
+
+#company {
+    background-color: white;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/blurry-leaf.png);
+    background-attachment: fixed;
+    background-size: 100%;
+    padding: 10rem 7rem;
+    font-size: 1.1em;
+}
+
+.company-container {
+    display: flex;
+    gap: 1em;
+}
+
+.company-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    & p {
+        margin: 0;
+    }
+}
+
+.company-img {
+    flex: 2;
+
+    & img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+}
+
+/***********************************************
+*** MEDIA QUERIES
+************************************************/
+
+/* Font-Size */
+    @media (min-width: 1400px) {
+        #pests {
+            font-size: 1.3em;
+        }
+
+        #company {
+            font-size: 1.4em;
+        }
+    }
