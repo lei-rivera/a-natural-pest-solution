@@ -60,7 +60,7 @@ img { /*temporary*/
 /* HEADER */
 
 #desktop-header {
-    display: show;
+    display: block;
 }
 
 #mobile-header {
