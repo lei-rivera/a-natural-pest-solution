@@ -9,6 +9,9 @@
         <!-- CSS LINK -->
         <link rel="stylesheet" href="styles.css">
 
+        <!-- JAVASCRIPT LINK -->
+        <script src="main.js" defer></script>
+
         <!-- FONT AWESOME LINK -->
         <script src="https://kit.fontawesome.com/26030cfeae.js" crossorigin="anonymous"></script>
 
@@ -24,12 +27,13 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="#main" class="active">Welcome</a></li>
-                    <li><a href="#pests">What We Treat</a></li>
-                    <li><a href="#company">Who We Are</a></li>
-                    <li><a href="#contact">Get In Touch</a></li>
+                    <li><a href="#main" class="nav-item active">Welcome</a></li>
+                    <li><a href="#pests" class="nav-item">What We Treat</a></li>
+                    <li><a href="#company" class="nav-item">Who We Are</a></li>
+                    <li><a href="#contact" class="nav-item">Get In Touch</a></li>
                 </ul>
             </nav>
+            <div class="hide-for-mobile"><a href="#main" class="active">Welcome</a></div>
         </header>
 
 
@@ -120,9 +124,10 @@
 
         <!-- SECTION 3: WHO WE ARE -->
         <section id="company">
-            <h3>Who We Are</h3>
+            <h3 class="hide-for-desktop">Who We Are</h3>
             <div class="company-container">
                 <div class="company-text">
+                    <h3 class="hide-for-mobile">Who We Are</h3>
                     <p>
                         At <b>A Natural Pest Solution</b>, we care about keeping our community's homes and businesses safe, comfortable, and pest free. With help from our <em>certified Entomologist,</em> we take the time to understand your specific pest problems and build a treatment plan that's both effective and environmentally responsible, so that you can relax knowing your space is protected.
                     </p>
