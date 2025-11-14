@@ -516,6 +516,35 @@ textarea {
         }
     }
 
+/* Submission */
+    
+    .successful-submit {
+        min-height: 92vh;
+        padding: 10vh 7vw 7vh 7vw;
+    }
+
+    .submission {
+        background-color: white;
+        border: 5px solid #fec20f;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        padding: 5vh;
+        text-align: center;
+        box-shadow: 0 0 10px 10px rgba(46, 15, 0, 0.151);
+    }
+
+    .icon {
+        font-size: 10rem;
+        color: #fec20f;
+    }
+
+    .submission a.button {
+        margin-top: 3vh;
+    }
+
 /***********************************************
 *** MEDIA QUERIES
 ************************************************/
@@ -691,5 +720,14 @@ textarea {
             & .bug-image {
                 width: 100%;
             }
+        }
+
+        /* Submission Form */
+        .submission {
+            font-size: .7em;
+        }
+
+        .submission .icon {
+            font-size: 8rem;
         }
     }
