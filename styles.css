@@ -586,12 +586,15 @@ textarea {
 
         #main {
             width: 100%;
-            height: 105dvh;
+            height: fit-content;
+            padding: 7dvh 0;
             background-size: 150%;
+            background-attachment: scroll;
+            font-size: 1.5rem;
         }
 
         .logo-img {
-            width: 25rem;
+            width: 40vw;
         }
 
         a.main {
@@ -681,13 +684,23 @@ textarea {
 
         /* Subpages */
 
+        .subpage-header {
+            padding: 0 2rem;
+        }
+
         div.header {
             width: 100%;
+        }
+
+        div.header-logo {
+            justify-content: center;
         }
 
         main {
             padding: 10vh 7vw 5vh 7vw;
             text-align: center;
+            background-attachment: scroll;
+            font-size: 1.5rem;
         }
 
         main h1 {
