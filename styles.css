@@ -587,7 +587,7 @@ textarea {
         #main {
             width: 100%;
             min-height: fit-content;
-            padding: 10dvh 0 7dvh 0;
+            /* padding: 10dvh 0 7dvh 0; */
             background-size: 150%;
             background-attachment: scroll;
             font-size: 1.5rem;
