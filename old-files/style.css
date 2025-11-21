@@ -409,8 +409,12 @@ footer ul {
 /* MOBILE LAYOUT */
 @media (max-width: 490px) {
     /* HEADER */
+    header {
+        position: scroll;
+    }
+    
     #header {
-        position: static;
+        position: scroll;
     }
     
     #desktop-header {

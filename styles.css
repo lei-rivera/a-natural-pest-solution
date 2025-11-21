@@ -576,6 +576,7 @@ textarea {
         header {
             justify-content: center;
             width: 100%;
+            position: static;
         }
         
         nav {
@@ -586,7 +587,7 @@ textarea {
 
         #main {
             width: 100%;
-            height: 100vh;
+            height: 95vh;
         }
 
         .logo-img {
