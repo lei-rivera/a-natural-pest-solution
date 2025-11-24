@@ -162,7 +162,19 @@
 
                 <!-- Contact Form -->
                 <div class="contact-form">
-                    <form action="#">
+                    <form
+                        name="contact"
+                        action="/subpages/success.html"
+                        method="POST"
+                        netlify-honeypot="class-field"
+                        data-netlify-recaptcha="true"
+                        data-netlify="true">
+
+                        <!-- HP Div -->
+                        <div class="hidden">
+                            <label for="class-field">Class</label>
+                            <input type="text" name="class-field">
+                        </div>
 
                         <!-- Subject line for email -->
                         <input type="hidden" name="subject" value="New message from %{formName} from %{siteName}" />
@@ -190,6 +202,9 @@
                             <label for="message">Message</label>
                             <textarea name="message" id="message" class="textbox" required></textarea>
                         </div>
+
+                        <!-- Recaptcha -->
+                        <div data-netlify-recaptcha="true"></div>
 
                         <!-- Submit Button -->
                         <div class="form-info">

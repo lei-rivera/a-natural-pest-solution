@@ -2,7 +2,9 @@
 
 This is a landing webpage I built for a local pest control company in Illinois and is my first professional project. The website features the company's expertise and contact information.
 
-🔗 **Live Demo:** https://lei-rivera.github.io/a-natural-pest-solution/
+🔗 **Live Demo:** https://lei-rivera.github.io/a-natural-pest-solution/ (project with no form submissions, view this to see project)
+
+**Client Website:** www.anaturalpestsolution.com (actual website)
 
 ![screenshot-of-client-homepage](images/website-screenshot.png)
 
